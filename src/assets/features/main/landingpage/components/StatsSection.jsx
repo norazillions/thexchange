@@ -1,3 +1,4 @@
+import illu4 from '/src/assets/images/illu4.png' ;
 const StatsSection = () => {
   // Array of statistics
   const stats = [
@@ -30,7 +31,7 @@ const StatsSection = () => {
             <div className="w-full max-w-md aspect-square  rounded-2xl flex items-center justify-center ">
               <div className="text-center">
                 <img 
-                src="/src/assets/images/illu4.png"
+                src={illu4}
                 alt="Money transfer illustration"
                 className="w-full h-full object-cover"
               />

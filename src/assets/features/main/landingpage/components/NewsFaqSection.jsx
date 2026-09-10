@@ -1,18 +1,20 @@
 import NewsCard from './NewsCard';
 import FAQ from './FAQ';
+import coin1 from '/src/assets/images/coin1.png';
+import coin2 from '/src/assets/images/coin2.png';
 
 const NewsFaqSection = () => {
   // News data array
   const newsItems = [
     {
       id: 1,
-      image: '/src/assets/images/coin1.png',
+      image: coin1,
       title: 'TheXchange Expands to 20 New Countries',
       description: 'We\'re thrilled to announce our expansion into 20 new countries across Afri...'
     },
     {
       id: 2,
-      image: '/src/assets/images/coin2.png',
+      image: coin2,
       title: 'Introducing Lower Transfer Fees',
       description: 'We\'ve reduced our transfer fees by up to 30%! Send money to your love...'
     }

@@ -3,22 +3,12 @@ import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/firestore';
 import { motion } from 'motion/react';
 import { doc, getDoc, collection, query, where, orderBy, limit, getDocs, onSnapshot } from 'firebase/firestore'; 
-import { 
-  ArrowUpRight,  
-  Users, 
-  Wallet,
-  Send,
-  Eye,
-  ChevronDown,
-  ReceiptText,
-  ArrowDownRight,
-  User,
-  Calendar,
-  EyeOff
-} from 'lucide-react';
+import {  ArrowUpRight , Users,  Wallet, Send, Eye, ChevronDown, ReceiptText, ArrowDownRight, User, Calendar, EyeOff} from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import MakeTransfer from './MakeTransfer';
 import TheLoad from '../components/common/TheLoad';
+import topup from '/src/assets/images/topup.png';
+import transaction from '/src/assets/images/transaction.png'
 
 // Simple Stat Card Component (kept inside Home.jsx for simplicity)
 const StatCard = ({ title, value, icon: Icon }) => {
@@ -220,7 +210,7 @@ const formatCurrency = (amount) => {
           <button className="hidden sm:flex items-center gap-2 bg-[#E91908] text-white text-xs font-medium px-4 py-2 rounded-md hover:bg-[#cc1707] transition-colors">
             {/* <Send className="w-3.5 h-3.5" /> */}
             Top up
-            <img src="/src/assets/images/topup.png" className='w-3.5 h-3.5' />
+            <img src={topup} className='w-3.5 h-3.5' />
           </button>
         </div>
       </motion.div>
@@ -247,7 +237,7 @@ const formatCurrency = (amount) => {
           <StatCard 
             title="Transfers made" 
             value={formatNumber(userData?.transactionCount || 0)}
-            icon="/src/assets/images/transaction.png"
+            icon={transaction}
           />
         </motion.div>
 
@@ -259,7 +249,7 @@ const formatCurrency = (amount) => {
           <StatCard 
             title="Beneficiaries" 
             value={formatNumber(userData?.beneficiaryCount || 0)}
-            icon="/src/assets/images/transaction.png"
+            icon={transaction}
           />
         </motion.div>
       </div>

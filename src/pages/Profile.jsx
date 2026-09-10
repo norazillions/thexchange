@@ -7,6 +7,7 @@ import { motion } from 'motion/react';
 import { User, Edit2, ArrowUpRight, LogOut, Bell } from 'lucide-react';
 import { toast } from 'react-toastify';
 import TheLoad from '../components/common/TheLoad';
+import avatar from '/src/assets/images/avatar.png'
 
 const Profile = () => {
   const navigate = useNavigate();
@@ -85,7 +86,7 @@ const Profile = () => {
             <div className="w-[60px] h-[60px] rounded-full bg-[#A6A6A6] flex items-center justify-center overflow-hidden flex-shrink-0">
               {userData?.profilePhoto ? (
                 <img 
-                  src="/src/assets/images/avatar.png" 
+                  src={avatar} 
                   alt="Profile" 
                   className="w-full h-full object-cover"
                 />

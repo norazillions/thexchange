@@ -1,5 +1,5 @@
 import { Star } from 'lucide-react';
-
+import phoneillu from '/src/assets/images/phoneillu.png';
 const AppDownloadSection = () => {
   return (
     <section className="w-full py-16 sm:py-20 relative overflow-hidden">
@@ -72,7 +72,7 @@ const AppDownloadSection = () => {
             <div className="w-full max-w-md aspect-square  rounded-2xl flex items-center justify-center ">
               <div className="text-center">
                 <img 
-                src="/src/assets/images/phoneillu.png"
+                src={phoneillu}
                 alt="Money transfer illustration"
                 className="w-full h-full object-cover"
               />

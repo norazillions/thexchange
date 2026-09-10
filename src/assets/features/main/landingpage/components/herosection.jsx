@@ -1,4 +1,5 @@
 import ExchangeRateCard from "./exchangeratecard";
+import wallet2 from '/src/assets/images/wallet2.png';
 
 const HeroSection = () => {
   const handleLogin = () => {
@@ -15,7 +16,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 w-full h-full bg-cover bg-center opacity-40"
         style={{ 
-          backgroundImage: `url('/src/assets/images/wallet2.png')` 
+          backgroundImage: `url(${wallet2})` 
         }}
       />
       

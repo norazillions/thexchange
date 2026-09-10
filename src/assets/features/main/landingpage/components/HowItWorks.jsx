@@ -1,32 +1,36 @@
 import HowItWorksCard from './HowItWorksCard';
+import icon1 from '/src/assets/images/icon1.png';
+import icon2 from '/src/assets/images/icon2.png';
+import icon3 from '/src/assets/images/icon3.png';
+import icon4 from '/src/assets/images/icon4.png';
 
 const HowItWorks = () => {
   // Data array for steps
   const steps = [
     {
       id: 1,
-      image: '/src/assets/images/icon1.png', 
+      image: icon1, 
       number: 1,
       title: 'Sign Up',
       description: 'Create your free account in minutes with just your email and basic details.'
     },
     {
       id: 2,
-      image: '/src/assets/images/icon2.png', 
+      image: icon2, 
       number: 2,
       title: 'Get yourself verified',
       description: 'Complete our quick verification process to ensure secure transactions.'
     },
     {
       id: 3,
-      image: '/src/assets/images/icon3.png', 
+      image: icon3, 
       number: 3,
       title: 'Add a beneficiary',
       description: 'Save your recipient\'s details for fast and easy future transfers.'
     },
     {
       id: 4,
-      image: '/src/assets/images/icon4.png', 
+      image: icon4, 
       number: 4,
       title: 'Send money',
       description: 'Enter the amount, choose your currency, and send money instantly.'

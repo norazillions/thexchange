@@ -1,23 +1,25 @@
 import FeatureCard from './featurecard';
-
+import illu1 from '/src/assets/images/illu1.png';
+import illu2 from '/src/assets/images/illu2.png';
+import illu3 from '/src/assets/images/illu3.png';
 const WhyChooseUs = () => {
   // Data array for features with image paths
   const features = [
     {
       id: 1,
-      image: '/src/assets/images/illu1.png',  // Placeholder path
+      image: illu1,  // Placeholder path
       title: 'Extremely Fast',
       description: 'Transactions processed in minutes, not days. Send money to loved ones instantly.'
     },
     {
       id: 2,
-      image: '/src/assets/images/illu2.png',  // Placeholder path
+      image: illu2 ,  // Placeholder path
       title: 'Unbeatable Rates',
       description: 'Competitive exchange rates with no hidden fees. Get the best value for your money.'
     },
     {
       id: 3,
-      image: '/src/assets/images/illu3.png',  // Placeholder path
+      image: illu3,  // Placeholder path
       title: 'Secure & Regulated',
       description: 'Fully licensed and regulated. Your money and data are protected with bank-grade security.'
     }
