@@ -1,6 +1,14 @@
 import ExchangeRateCard from "./exchangeratecard";
 
 const HeroSection = () => {
+  const handleLogin = () => {
+    window.location.href = '/login';
+  };
+
+  const handleRegister = () => {
+    window.location.href = '/signup';
+  };
+  
   return (
     <section className="w-full lg:min-h-screen bg-[#251412] relative flex items-center">
       {/* Background Image with Overlay */}
@@ -30,10 +38,16 @@ const HeroSection = () => {
             </p>
             
             <div className="flex  lg:hidden gap-3 mt-4">
-              <button className="text-white/80 text-[10px] hover:text-white transition-colors">
+              <button 
+                onClick={handleLogin}
+                className="text-white/80 text-[10px] hover:text-white transition-colors"
+              >
                 Login
               </button>
-              <button className="bg-[#E91908] text-white text-[10px] px-4 py-1.5 rounded-md hover:bg-[#cc1707] transition-colors">
+              <button 
+                onClick={handleRegister}
+                className="bg-[#E91908] text-white text-[10px] px-4 py-1.5 rounded-md hover:bg-[#cc1707] transition-colors"
+              >
                 Register
               </button>
             </div>
